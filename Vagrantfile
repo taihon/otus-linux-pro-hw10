@@ -49,6 +49,7 @@ Vagrant.configure("2") do |config|
           cp ~vagrant/.ssh/auth* ~root/.ssh
           SHELL
         box.vm.provision "shell", path: "psax.sh"
+        box.vm.provision "shell", path: "lsof.sh"
     	end
   	end
 end
