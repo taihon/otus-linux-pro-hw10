@@ -10,3 +10,4 @@ function getfdinfo(){
 export -f getfdinfo
 echo -e "EXE\tPID\tFD\tFILE"
 find /proc/[0-9]*/fd -type l -exec bash -c "getfdinfo \"{}\"" \;
+exit 0
